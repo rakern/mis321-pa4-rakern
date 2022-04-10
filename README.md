@@ -1,26 +1,39 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-f059dc9a6f8d3a56e377f745f24479a46679e63a5d9fe6f495e02850cd0d8118.svg)](https://classroom.github.com/online_ide?assignment_repo_id=7416978&assignment_repo_type=AssignmentRepo)
-# PA3
-Important!
+#PA4:
+Connects my database created in PA3 to a front-end website
 
-You should not edit or delete any of the starter code (besides Program.cs), but instead extend to work with a MySQL database.
-
-You can choose to have a local MySQL database to start and move to a database hosted on Heroku.
-Your design should allow to easily change the connection string to make this possible.
-We will go over how to do this in class, but below are links from the video lectures document to help beforehand.
-
-
-Hosted MySQL Database:
-
-MySQL – Pt 1 (https://alabama.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=479f7622-484b-4aba-a542-accb00f2c709)
-
-MySQL – Pt 2 (https://alabama.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0ddb357c-f73a-4318-9ed0-accb0123ffda)
-
-MySQL – Pt 3 (https://alabama.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c7237498-a091-466a-baf4-accb0126f041)
-
-MySQL – Pt 4 (https://alabama.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=839062b4-1f0c-4d29-b043-accb0136e82f)
-
-MySQL – Pt 5 (https://alabama.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=29147a63-1eed-421f-b3ca-accb013ab497)
-
-MySQL – Pt 6 (https://alabama.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=71f14cc3-2b41-4a8c-82b7-accb013d21d4)
-
-MySQL – Pt 7 (https://alabama.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=90f69a70-6115-4b24-8034-accb013ef0b5)
+Big Al Goes Full Stack!
+  In PA1 we created the back end of the Big Al’s Playlist system.
+  In PA3 we connected the Big Al’s Playlist system to a MySQL
+  database.
+  In this project we want to update that application to connect
+  our front-end web application to the back in application we
+  have built. This means you will need to create a new webapi
+  app for the front end to call. You can port your back-end
+  classes over to the new webapi app.
+  
+Available Functions
+  Within the menu of the application the user should be able to:
+  1. Show all songs – No need to show ID or Timestamp on a web UI
+  2. Add a song
+  3. Delete a song
+  4. Favorite a song
+  * All songs should display in descending timestamp order.
+  *** Whenever a change is made, the database must be updated to
+  reflect the change
+  
+Tracking Posts
+  • Big Al’s songs should be read in from a MySQL database.
+  The table should be the songs table. The table should have
+  the following fields:
+  • Id
+  • Title
+  • Date Added
+  • Deleted
+  • Favorited
+  • The Id can be an auto incremented integer or a UUID string.
+  
+Database Design
+  • Your design should plan for the future. We may even
+  move to a 3-tier architecture at some point and move
+  crud operations out of the base app.
+  •i.e. this requirement is to use the strategy pattern!
