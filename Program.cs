@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using PA3.FileHandleing;
-using PA3.Models;
-using PA3.Utilities;
+using API.FileHandling;
+using API.Models;
+using API.Utilities;
+using API.Database;
 
-using PA3.Database;
-
-namespace PA3
+namespace PA4
 {
     class Program
     {
@@ -14,19 +13,19 @@ namespace PA3
         {
             int userChoice = 0;
             bool keepGoing;
-            ReadFromFile readFromFile = new ReadFromFile();
-            List<Song> playlist = readFromFile.GetAll();
-            //Menu programMenu = new Menu(){SongUtilities = new SongUtil(), Playlist = playlist};
-            Menu programMenu = new Menu(){SongUtilities = new SongUtilDatabase(), Playlist = playlist};
+            // ReadFromFile readFromFile = new ReadFromFile();
+            // List<Song> playlist = readFromFile.GetAll();
+            // //Menu programMenu = new Menu(){SongUtilities = new SongUtil(), Playlist = playlist};
+            // Menu programMenu = new Menu(){SongUtilities = new SongUtilDatabase(), Playlist = playlist};
 
-            // DeleteSong.DropSongTable();
-            // UpdateSong.CreateSongTable();
+             DeleteSong.DropSongTable();
+             UpdateSong.CreateSongTable();
 
-            do {
-                userChoice = programMenu.DisplayMainMenu(); 
-                keepGoing = programMenu.RouteMainMenu(userChoice);
+            // do {
+            //     userChoice = programMenu.DisplayMainMenu(); 
+            //     keepGoing = programMenu.RouteMainMenu(userChoice);
                 
-            } while (keepGoing);
+            // } while (keepGoing);
 
         }
     }

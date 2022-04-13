@@ -1,0 +1,5 @@
+C:\Users\racha\OneDrive\Documents\source\repos\mis321\mis321-pa4-rakern\obj\Debug\net5.0\PA4.csproj.AssemblyReference.cache
+C:\Users\racha\OneDrive\Documents\source\repos\mis321\mis321-pa4-rakern\obj\Debug\net5.0\PA4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\racha\OneDrive\Documents\source\repos\mis321\mis321-pa4-rakern\obj\Debug\net5.0\PA4.AssemblyInfoInputs.cache
+C:\Users\racha\OneDrive\Documents\source\repos\mis321\mis321-pa4-rakern\obj\Debug\net5.0\PA4.AssemblyInfo.cs
+C:\Users\racha\OneDrive\Documents\source\repos\mis321\mis321-pa4-rakern\obj\Debug\net5.0\PA4.csproj.CoreCompileInputs.cache
